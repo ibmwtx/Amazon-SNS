@@ -41,13 +41,13 @@ PUT RULE : PUT("ASNS", "-A ****  -S *** -C ITXIN  -T", Input)) <br>
 
 ## Amazon Adapter Installation Instructions 
 
-a) create a folder com.ibm.itx.amaxon.sns under <WTX INSTALL>/jars directory
-b) Drop m4sns.jar in to <WTX INSTALL>/jars/com.ibm.itx.amaxon.sns <br>
+a) create a folder com.ibm.itx.amaxon.sns under WTX INSTALL/jars directory
+b) Drop m4sns.jar in to WTX INSTALL/jars/com.ibm.itx.amaxon.sns <br>
 c) Edit adapters.xml and add the following line <br>
 
 <M4Adapter name="Amazon Simple Notificaiton Service" alias="ASNS" id="174" type="app" class="com/ibm/itx/amazon/sns"/> <br>
 
-d) Download Amazon SNS SDK Java artifacts from [Tools for Amazon Web Services](https://aws.amazon.com/tools/). From the zip file, Copy aws-java-sdk-1.xxx.jar, ccommons-codec-1.xx.jar, commons-lang3-xxx.jar.jar, commons-logging-1.xx.jar, pofluent-hc-4.xx.jar,httpclient-xx.jar, httpclient-cache-4.xx.jar, httpcore-4.xx.jar, httpmime-4.xx.jar, jackson-annotations-2.xx.jar, jackson-core-2.xx.jar, jackson-databind-2.x.jar and joda-time-2.x.jar to <WTX INSTALL DIR>/jars/com.ibm.itx.amaxon.sns <br>
+d) Download Amazon SNS SDK Java artifacts from [Tools for Amazon Web Services](https://aws.amazon.com/tools/). From the zip file, Copy aws-java-sdk-1.xxx.jar, ccommons-codec-1.xx.jar, commons-lang3-xxx.jar.jar, commons-logging-1.xx.jar, pofluent-hc-4.xx.jar,httpclient-xx.jar, httpclient-cache-4.xx.jar, httpcore-4.xx.jar, httpmime-4.xx.jar, jackson-annotations-2.xx.jar, jackson-core-2.xx.jar, jackson-databind-2.x.jar and joda-time-2.x.jar to WTX INSTALL DIR/jars/com.ibm.itx.amaxon.sns <br>
 
 d) Invoke cleanextenderstudio.bat to invoke Design Studio
  
