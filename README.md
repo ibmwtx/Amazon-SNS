@@ -17,8 +17,8 @@ Adapter commands can be specified by using a command string on the command line 
 where -IM is the Input Source Override execution command and -OM is the Output Target Override execution command, alias is the adapter alias, and card_num is the number of the input or output card. The following table shows the adapter alias and its execution command.
 
 
-Adapter 	:  EXCEL <br>
-Alias 	        :  EXCEL <br>
+Adapter 	:  Amazon Simple Notification Service <br>
+Alias 	        :  ASNS <br>
 As Input        :  -**IMASNS**card_num <br>
 As Output       :  -**OMASNS**card_num <br>    	  
 
