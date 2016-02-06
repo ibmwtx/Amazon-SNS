@@ -14,40 +14,96 @@ Adapter commands can be specified by using a command string on the command line 
 -OM[alias] card_num
 
 
-where -IM is the Input Source Override execution command and -OM is the Output Target Override execution command, alias is the adapter alias, and card_num is the number of the input or output card. The following table shows the adapter alias and its execution command.
+where 
+
+-IM is the Input Source Override execution command 
+
+-OM is the Output Target Override execution command
+
+alias is the adapter alias, 
+
+card_num is the number of the input or output card. 
 
 
-Adapter 	:  Amazon Simple Notification Service <br>
-Alias 	        :  ASNS <br>
-As Input        :  -**IMASNS**card_num <br>
-As Output       :  -**OMASNS**card_num <br>    	  
+The following table shows the adapter alias and its execution command.
+
+Adapter 	:  Amazon Simple Notification Service 
+
+Alias 	        :  ASNS 
+
+As Input        :  -**IMASNS**card_num 
+
+As Output       :  -**OMASNS**card_num 
+
 
 
 ## Amazon SNS Adapter commands
 
 The following table lists valid commands for the Amazon SNS Adapter. The adapter supports only outbound. 
 
-Topic Name (-C)     : SNS Topic Name<br>
-Access Key (-A)	  : Access Key to connect to the SNS Service <br>
-Secret Key (-S )  : Secret Key <br>
+
+Topic Name (-C)     : SNS Topic Name
+
+Access Key (-A)	  : Access Key to connect to the SNS Service 
+
+Secret Key (-S )  : Secret Key
+
 
 ## Amazon SNS Adapter Command Line Examples
 
 ###Outbound Adapter : 
 
-Line :-A ****  -S *** -C ITXIN <br>
-PUT RULE : PUT("ASNS", "-A ****  -S *** -C ITXIN  -T", Input)) <br>
+Line :-A ****  -S *** -C ITXIN 
+
+PUT RULE : PUT("ASNS", "-A ****  -S *** -C ITXIN  -T", Input)) 
+
 
 
 ## Amazon Adapter Installation Instructions 
 
 a) create a folder com.ibm.itx.amazon.sns under WTX INSTALL/jars directory
-b) Drop m4sns.jar in to WTX INSTALL/jars/com.ibm.itx.amazon.sns <br>
-c) Edit adapters.xml and add the following line <br>
 
-M4Adapter name="Amazon Simple Notificaiton Service" alias="ASNS" id="174" type="app" class="com/ibm/itx/amazon/sns" <br>
+b) Drop m4sns.jar in to WTX INSTALL/jars/com.ibm.itx.amazon.sns
 
-d) Download Amazon SNS SDK Java artifacts from [Tools for Amazon Web Services](https://aws.amazon.com/tools/). From the zip file, Copy aws-java-sdk-1.xxx.jar, ccommons-codec-1.xx.jar, commons-lang3-xxx.jar.jar, commons-logging-1.xx.jar, pofluent-hc-4.xx.jar,httpclient-xx.jar, httpclient-cache-4.xx.jar, httpcore-4.xx.jar, httpmime-4.xx.jar, jackson-annotations-2.xx.jar, jackson-core-2.xx.jar, jackson-databind-2.x.jar and joda-time-2.x.jar to WTX INSTALL DIR/jars/com.ibm.itx.amazon.sns <br>
+c) Edit adapters.xml and add the following line
+
+
+M4Adapter name="Amazon Simple Notificaiton Service" alias="ASNS" id="174" type="app" class="com/ibm/itx/amazon/sns"
+
+
+d) Download Amazon SNS SDK Java artifacts from [Tools for Amazon Web Services](https://aws.amazon.com/tools/). 
+
+From the zip file, Copy 
+
+aws-java-sdk-1.xxx.jar
+
+commons-codec-1.xx.jar
+
+commons-lang3-xxx.jar.jar
+
+commons-logging-1.xx.jar
+
+pofluent-hc-4.xx.jar
+
+httpclient-xx.jar
+
+httpclient-cache-4.xx.jar
+
+httpcore-4.xx.jar
+
+httpmime-4.xx.jar
+
+jackson-annotations-2.xx.jar
+
+jackson-core-2.xx.jar
+
+jackson-databind-2.x.jar 
+
+joda-time-2.x.jar 
+
+
+to WTX INSTALL DIR/jars/com.ibm.itx.amazon.sns <br>
+
 
 d) Invoke cleanextenderstudio.bat to invoke Design Studio
  
