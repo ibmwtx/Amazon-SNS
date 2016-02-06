@@ -51,20 +51,31 @@ Secret Key (-S )  : Secret Key  - String (required)
 
 Region -R : Region - Integer (optional, default is 1)
 
+
 Values for Region are
 
+US_EAST_1        -   			1
 
-US_EAST_1                 1
-US_WEST_1                 2
-US_WEST_2                 3
-EU_WEST_1                 4
-EU_CENTRAL_1              5
-AP_SOUTHEAST_1            6
-AP_SOUTHEAST_2            7
-AP_NORTHEAST_1            8
-SA_EAST_1                 9
-CN_NORTH_1                10
-DEFAULT_REGION            11
+US_WEST_1        -        2
+
+US_WEST_2        -        3
+
+EU_WEST_1     	 -	      4
+
+EU_CENTRAL_1     -        5
+
+AP_SOUTHEAST_1   -        6
+
+AP_SOUTHEAST_2    -       7
+
+AP_NORTHEAST_1    -       8
+
+SA_EAST_1         -       9
+
+CN_NORTH_1        -     	10
+
+DEFAULT_REGION    -     	11
+
 
 
 ## Amazon SNS Adapter Command Line Examples
